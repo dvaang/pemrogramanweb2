@@ -40,8 +40,8 @@ public function _construct(){
         $db = new database();
         $koneksi = $db->getKoneksi();
 
-        $sql = "INSERT INTO buku (judul, pengarang, penerbit, tahun) VALUES ('".$buku->getJudul()."', '".$buku->getPengarang()."', 
-        '".$buku->getPenerbit()."', '".$buku->getTahun()."')";
+        $sql = "INSERT INTO buku (judul, pengarang, penerbit, tahun) VALUES ('".$buku->getJudul()."',
+         '".$buku->getPengarang()."', '".$buku->getPenerbit()."', '".$buku->getTahun()."')";
 
         $query = $koneksi->query($sql);
         return $query;
