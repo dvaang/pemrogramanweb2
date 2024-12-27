@@ -42,7 +42,6 @@ class AdminController extends BaseController
         $bookModel = model('bookModel');
         $book = $bookModel->find($id);
 
-        return view();
     }
     public function transaksi(){
         return view('admin/transaksi');
